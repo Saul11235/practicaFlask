@@ -1,18 +1,17 @@
 #Ejemplo de  configurando  debug en  Flask
 from flask import Flask
 #importar para paramtros de entrada en url 
-from flask import request
 
 app=Flask(__name__) #creando objeto app
 
-@app.route("/") #decorador
+@app.route("/pagina") #decorador
 def holaMundo(): 
-    return "Hola Mundo es una prueba de las configuraciones de app.run  en flask :) "
+    return "pagina mira la direccion"
 
 #-------------------------------------
 if __name__=="__main__": #lanzando app ejemplo
     import webbrowser
-    webbrowser.open("http://127.0.0.1:8000")
+    webbrowser.open("http://127.0.0.1:8000/pagina")
     #---------------------------
     #  port=8000
     #  debug=True  #el clien te escucha al servidor

@@ -13,6 +13,7 @@ if __name__=="__main__": #lanzando app ejemplo
     webbrowser.open("http://127.0.0.1:8000")
     #---------------------------
     #  port=8000
-    #  debug=True  #el clien te escucha al servidor
+    #  debug=True  #el cliente escucha al servidor
+    #              #actualiza si detecta uncambio en el prog
 
     app.run(debug=True, port=8000) 
